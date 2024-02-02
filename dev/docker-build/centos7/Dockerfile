@@ -12,6 +12,7 @@ RUN yum install -y gcc-toolset-12-gcc*
 #RUN yum install -y devtoolset-11-gcc devtoolset-11-gcc-c++
 #RUN echo '. /opt/rh/devtoolset-11/enable' >> ~/.bashrc
 RUN echo '. /opt/rh/gcc-toolset-12/enable' >> ~/.bashrc 
+RUN yum install -y gcc
 # install rust nightly toolchain
 RUN curl https://sh.rustup.rs > /rustup-init
 RUN chmod +x /rustup-init
